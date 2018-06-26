@@ -3,7 +3,7 @@ MAINTAINER Lexin Gong <gonglexin@gmail.com>
 
 RUN yum update -y && yum clean all
 RUN yum install -y wget && yum clean all
-ENV ERLANG_VERSION 21.0.1
+ENV ERLANG_VERSION 21.0
 RUN wget http://erlang.org/download/otp_src_${ERLANG_VERSION}.tar.gz
 RUN yum install -y gcc gcc-c++ glibc-devel make ncurses-devel openssl-devel autoconf java-1.8.0-openjdk-devel git && yum clean all
 RUN tar zxvf otp_src_${ERLANG_VERSION}.tar.gz
