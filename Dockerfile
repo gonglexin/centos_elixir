@@ -30,7 +30,7 @@ RUN mix local.hex --force
 RUN mix local.rebar --force
 
 # Install Node.js
-RUN curl --silent --location https://rpm.nodesource.com/setup_9.x | bash -
+RUN curl --silent --location https://rpm.nodesource.com/setup_10.x | bash -
 RUN yum -y install nodejs
 
 # Install Yarn
