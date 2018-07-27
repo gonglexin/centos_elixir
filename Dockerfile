@@ -15,7 +15,7 @@ ENV LANGUAGE en_US:en
 ENV LC_ALL en_US.UTF-8
 
 # Build Elixir
-ENV ELIXIR_VERSION 1.7.0
+ENV ELIXIR_VERSION 1.7.1
 WORKDIR /home
 RUN git clone https://github.com/elixir-lang/elixir.git
 WORKDIR /home/elixir
